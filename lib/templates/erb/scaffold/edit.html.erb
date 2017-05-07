@@ -1,0 +1,6 @@
+<%%= content_for :card_title, 'Edit <%= singular_table_name.humanize %>' %>
+<%%= render 'form', <%= singular_table_name %>: @<%= singular_table_name %> %>
+
+</div>
+<div class="card-footer">
+<%%= link_to 'Cancel', <%= index_helper %>_path, class: 'card-link' %>

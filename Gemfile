@@ -32,7 +32,7 @@ gem 'sucker_punch', '~> 2.0'
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
-gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-sass'
 # gem 'will_paginate', '~> 3.1.0'
 # gem 'will_paginate-bootstrap4'

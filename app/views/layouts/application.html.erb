@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    
+
     <%# render 'shared/social_metatags' %>
     <title><%= content_for?(:title) ? content_for(:title) : 'HOME PAGE' %></title>
     <%= csrf_meta_tags %>
@@ -17,10 +17,10 @@
   </head>
 
   <body>
-    <%= render 'interface/navbar' %>
-    <div class="container">
+    <div class="wrapper">
+      <%= render 'interface/navbar' %>
       <%= yield %>
+      <%= render 'interface/footer' %>
     </div>
-    <%= render 'interface/footer' %>
   </body>
 </html>

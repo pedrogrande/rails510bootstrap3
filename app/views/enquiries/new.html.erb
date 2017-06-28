@@ -1,0 +1,7 @@
+<%= content_for :card_title, 'New Enquiry' %>
+
+<%= render 'form', enquiry: @enquiry %>
+
+</div>
+<div class="card-footer">
+<%= link_to 'Cancel', enquiries_path, class: 'card-link' %>

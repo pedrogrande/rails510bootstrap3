@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+<%= link_to '<i class="fa fa-plus-square-o"></i> Add Enquiry'.html_safe, new_enquiry_path, class: 'btn btn-primary btn-sm' %>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Subject</th>
+      <th>Message</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @enquiries.each do |enquiry| %>
+      <tr>
+              
+          <td><%= link_to enquiry.name, enquiry %></td>
+        
+              
+          <td><%= enquiry.email %></td>
+        
+              
+          <td><%= enquiry.subject %></td>
+        
+              
+          <td><%= enquiry.message %></td>
+        
+              <td><%= link_to '<i class="fa fa-edit fa-fw"></i>'.html_safe, edit_enquiry_path(enquiry) %></td>
+        <td><%= link_to '<i class="fa fa-trash-o fa-fw"></i>'.html_safe, enquiry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :enquiries
   root 'home#index'
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'

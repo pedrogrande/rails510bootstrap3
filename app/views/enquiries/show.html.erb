@@ -1,0 +1,27 @@
+<%= content_for :card_title, '' %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @enquiry.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @enquiry.email %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @enquiry.subject %>
+</p>
+
+<p>
+  <strong>Message:</strong>
+  <%= @enquiry.message %>
+</p>
+
+</div>
+<div class="card-footer">
+<%= link_to 'Edit', edit_enquiry_path(@enquiry), class: 'card-link' %>
+<%= link_to 'Back', enquiries_path, class: 'card-link' %>

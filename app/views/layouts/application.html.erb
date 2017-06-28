@@ -9,10 +9,11 @@
     <meta name="author" content="">
 
     <%# render 'shared/social_metatags' %>
-    <title><%= content_for?(:title) ? content_for(:title) : 'HOME PAGE' %></title>
+    <title><%= content_for?(:title) ? content_for(:title) : 'Baxter and Me' %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="//cdn.materialdesignicons.com/1.9.32/css/materialdesignicons.min.css">
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
@@ -22,5 +23,15 @@
       <%= yield %>
       <%= render 'interface/footer' %>
     </div>
+    <script type="text/javascript">
+      $('.mute').click(function() {
+        var vid = document.getElementById("landing-video");
+        if (vid.muted == false) {
+          vid.muted = true;
+        } else {
+          vid.muted = false;
+        }
+      });
+    </script>
   </body>
 </html>

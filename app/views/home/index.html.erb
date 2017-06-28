@@ -1,40 +1,121 @@
+<style media="screen">
+  .hero-text-wrap.overlay-bg {
+    /*background: rgba(0, 0, 0, 0.45);*/
+    background-image: url(<%= asset_path 'BAMs2.png' %>);
+    background-repeat:no-repeat;
+    background-position:left center;
+    width: 100%;
+    height: 101vh;
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.2);
+  }
+</style>
 <!--=== Video Start ======-->
 <section class="pt-0 pb-0 bg-video">
   <div class="hero-text-wrap overlay-bg">
     <div class="hero-text white-color">
       <div class="container text-center">
-        <h2 class="white-color text-uppercase font-400 letter-spacing-5">Arcon</h2>
-        <h1 class="white-color text-uppercase font-700">Startup Business</h1>
-        <h3 class="white-color font-400 text-uppercase">We aren't afraid to be different</h3>
-        <p class="text-center mt-30"><a class="btn btn-dark btn-circle btn-animate"><span>Start a Project <i class="mdi mdi-arrow-right"></i></span></a> </p>
+        <!-- <h2 class="white-color text-uppercase font-400 letter-spacing-5">Arcon</h2> -->
+        <!-- <h1 class="white-color text-uppercase font-700">Baxter and Me</h1>
+        <h3 class="white-color font-400 text-uppercase">A dog loving film</h3> -->
+        <p class="text-center mt-30"><a class="btn btn-white btn-circle btn-animate" href="#" target="_blank"><span>Watch <i class="mdi mdi-video white-color"></i></span></a> </p>
       </div>
     </div>
   </div>
   <div class="homepage-hero-module">
     <div class="video-container">
       <div class="filter"></div>
-      <video autoplay loop class="fillWidth">
-        <source src="assets/images/video/alpha-video.mp4" type="video/mp4" />
-        <source src="assets/images/video/alpha-video.webm" type="video/webm" />
+      <video muted autoplay loop class="fillWidth" id="landing-video">
+        <source src="<%= asset_path 'Trimmed.mp4' %>" type="video/mp4" />
+        <!-- <source src="assets/images/video/alpha-video.webm" type="video/webm" /> -->
       </video>
-      <div class="poster hidden"> <img src="assets/images/video/alpha-video.jpg" alt="video-img"> </div>
+      <div class="poster hidden"> <img src="<%= asset_path 'Baxter.jpg' %>" alt="video-img"> </div>
     </div>
   </div>
 </section>
 <!--=== Video End ======-->
 
-<!--=== Welcome Start ======-->
-<section class="first-ico-box">
+<!--=== About Us Start ======-->
+<section class="white-bg">
   <div class="container">
     <div class="row">
-      <div class="col-sm-8 section-heading">
-        <h2 class="wow fadeTop" data-wow-delay="0.1s">Who We Are</h2>
-        <h4 class="source-font wow fadeTop" data-wow-delay="0.2s">- The world at your fingertips -</h4>
-        <div class="mt-30 wow fadeTop" data-wow-delay="0.3s">
-          <p>We’re nuts about improving your business so we ensure that we track results from day one. Sure, we come up with great creative ideas that engage and captivate your customers, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius quam ut magna ultricies pellentesque. </p>
+      <div class="col-md-6">
+        <h2 class="text-uppercase font-700 mt-0 wow fadeIn" data-wow-delay="0.1s">Our Features</h2>
+        <div class="panel-group accordion-color mt-50" id="accordion-color">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion-color" href="#collapseOne"> Request a screening </a> </h3>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+                Yes! You can organise a screening for your group of dog-loving friends or club. Visit Demand.Film for all the details.<br />
+                <!-- <a href="https://au.demand.film/baxter-and-me/" target="_blank" class="btn btn-dark btn-circle btn-animate"><span>Call Us Now <i class="mdi mdi-arrow-right"></i></span></a> -->
+                <div class=" mt-10 mb-10"><a href="https://au.demand.film/baxter-and-me/" target="_blank" class="btn btn-color btn-sm"><span>Request a screening <i class="mdi mdi-arrow-right"></i></span></a></div>
+               </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-color" href="#collapseTwo"> Buy the DVD/Bluray </a> </h3>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body"> Would you like a copy for home so you can watch anytime you like? Choose between the DVD or Bluray version.
+              <div class=" mt-10 mb-10">
+                <a href="https://au.demand.film/baxter-and-me/" target="_blank" class="btn btn-color btn-sm"><span>Buy the DVD <i class="mdi mdi-arrow-right"></i></span></a>
+                <a href="https://au.demand.film/baxter-and-me/" target="_blank" class="btn btn-color btn-sm"><span>Buy the BLURAY <i class="mdi mdi-arrow-right"></i></span></a></div> </div>
+            </div>
+          </div>
+          <!-- <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title"> <a class="collapsed" data-toggle="collapse" data-parent="#accordion-color" href="#collapseThree"> App Development </a> </h3>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="arcon-video-box mt-30"> <img class="img-responsive" src="<%= asset_path 'Baxter.jpg' %>" alt="">
+          <div class="arcon-video-box_overlay">
+            <div class="center-layout">
+              <div class="v-align-middle"> <a class="popup-youtube" href="https://vimeo.com/219438401">
+                <div class="play-button"><i class="mdi mdi-play"></i> </div>
+                </a> </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!--=== Welcome End ======-->
+<!--=== About Us End ======-->
+
+
+<!--=== Contact Us Start ======-->
+<section class="contact-us pt-0">
+  <div class="container">
+    <div class="row mt-50">
+      <div class="row">
+        <div class="col-md-8 section-heading">
+          <h2 class="text-uppercase">Get in touch. We're friendly.</h2>
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget nisl gravida, interdum nunc quis, faucibus ligula. Nam eu neque nunc. Suspendisse egestas dolor ante, nec tincidunt sem malesuada at.</p> -->
+        </div>
+      </div>
+      <div class="col-md-8">
+        <%= render 'enquiries/form' %>
+      </div>
+      <div class="col-md-4">
+        <h3>Postal Location</h3>
+        <address>
+        PO Box 16122 Toronto Eaton Centre,<br>
+        220 The PATH Toronto, ON M5B 2H1, Canada<br>
+        <abbr title="Phone">P:</abbr> (+1) 613 555-0105<br>
+        <a href="mailto:#">alphadot@example.com</a>
+        </address>
+      </div>
+    </div>
+  </div>
+</section>
+<!--=== Contact Us End ======-->

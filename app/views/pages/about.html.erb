@@ -1,2 +1,54 @@
-<h1>Pages#about</h1>
-<p>Find me in app/views/pages/about.html.erb</p>
+<nav class="navbar-scrollspy navbar navbar-default navbar-fixed white bootsnav on no-full navbar-transparent" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+  <div class="container">
+    <!--=== Start Atribute Navigation ===-->
+    <div class="attr-nav">
+      <ul class="social-media-dark social-top">
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>
+        <li><a href="#" class="fa fa-instagram"></a></li>
+        <!-- <li><a href="#" class="fa mute" data-turbolinks="false"><%= image_tag 'bars.gif', width: '20px' %></a></li> -->
+      </ul>
+    </div>
+    <!--=== End Atribute Navigation ===-->
+
+    <!--=== Start Header Navigation ===-->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="fa fa-bars"></i> </button>
+      <div class="logo"> <a href="index.html"> <img class="logo logo-display" src="<%= asset_path 'baxterandme.png' %>" alt=""> <img class="logo logo-scrolled" src="<%= asset_path 'baxterandme.png' %>" alt=""> </a> </div>
+    </div>
+    <!--=== End Header Navigation ===-->
+
+    <!--=== Collect the nav links, forms, and other content for toggling ===-->
+    <div class="navbar-collapse collapse" id="navbar-menu" aria-expanded="false">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/#watch">Watch</a></li>
+        <li><a href="/#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <!--=== /.navbar-collapse ===-->
+  </div>
+</nav>
+<!--=== Header End ======-->
+<!--=== Our Service Start ======-->
+<section class="white-bg">
+  <div class="col-md-6 col-sm-4 bg-flex bg-flex-right">
+    <div class="bg-flex-holder bg-flex-cover" style="background-image: url(<%= asset_path 'Baxter.jpg' %>);"></div>
+  </div>
+  <div class="container">
+    <div class="col-md-6 col-sm-7">
+      <h2 class="text-uppercase font-700">One woman’s life, with and without men, but always with dogs.</h2>
+      <!-- <h4 class="mt-10 line-height-26 source-font">Part of your success.</h4> -->
+      <p class="mt-20">Acclaimed and award winning film maker Gillian Leahy turns her mind to the relationship between herself and her dog in this searching, funny, touching and thought provoking documentary.</p>
+      <p>Gill questions her own relationship with her big brown chocolate Labrador, Baxter, and our relationships in general between dogs and humans.</p>
+      <p>It all begins when Gill wakes up one morning and asks herself, “What am I doing living with this big brown beast?”  And it takes off from there.</p>
+      <p>In Gill’s idiosyncratic, bruisingly honest and dogged way, the film takes a walk down Gill’s life with dogs, her relationships with people and most significantly her current relationship with the charming and wilful Baxter.</p>
+      <p>Do dogs love us?  Do we love dogs?  Are we in control or are they?  Who is training who?  Why do we love dogs?  Do we treat dogs as they deserve?  Do we treat them as we should? How should we treat them? Are they our slaves or are we theirs?  What do they give us and what do we give them?</p>
+      <p>Enhanced by Elizabeth Drake’s music, Steven Macdonald’s insightful cinematography, Denise Haslem’s adroit editing and Gill’s own eccentric, astute, wry and opinionated voice over musings, the film takes us to some familiar haunts and some unexpected destinations on the journey of casting an eye on what goes on between dogs and humans.</p>
+      <p>If you’ve ever had a dog, or ever loved a dog, or ever known anyone who loved a dog, or ever wondered why on earth other people love dogs, this could be just the film for you.</p>
+      <p class="mt-30"><a class="btn btn-color btn-circle" href="/">Back to home</a></p>
+    </div>
+  </div>
+</section>
+<!--=== Our Service End ======-->

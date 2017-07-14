@@ -19,7 +19,7 @@ border-radius: 0
   <div class="form-inputs">
     <%= f.input :name, label: false, placeholder: 'Your name' %>
     <%= f.input :email, label: false, placeholder: 'Your email' %>
-    <%= f.input :subject, label: false, collection: ['Test'], prompt: 'Select enquiry type' %>
+    <%= f.input :subject, label: false, collection: ['Screening enquiry', 'Purchase enquiry', 'General enquiry'], prompt: 'Select enquiry type' %>
     <%= f.input :message, label: false, placeholder: 'Your message', input_html: { rows: 7 } %>
   </div>
 

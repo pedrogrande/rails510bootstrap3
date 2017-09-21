@@ -31,3 +31,20 @@
     background: url(../images/background/parallax-bg-4.jpg) center 0 no-repeat;
     background-size: cover;
 }
+
+.hero-text {
+    padding-top: 80px;
+}
+
+ul.social-media-dark li:last-child {
+    margin-right: -14px;
+}
+
+@media (max-width: 992px) {
+  nav.navbar.bootsnav .navbar-toggle {
+      display: inline-block;
+      float: left;
+      margin-right: 13px;
+      margin-top: 12.5px;
+  }
+}

@@ -1,33 +1,26 @@
-<nav class="navbar-scrollspy navbar navbar-default navbar-fixed white bootsnav on no-full navbar-transparent" data-minus-value-desktop="70" data-minus-value-mobile="55" data-speed="1000">
+<nav class="navbar navbar-default navbar-fixed navbar-transparent white bootsnav on no-full">
   <div class="container">
-    <!--=== Start Atribute Navigation ===-->
     <div class="attr-nav">
       <ul class="social-media-dark social-top">
         <li><a href="https://www.facebook.com/BaxterandMe/" class="fa fa-facebook" target="_blank"></a></li>
         <!-- <li><a href="#" class="fa fa-twitter" target="_blank"></a></li> -->
         <li><a href="https://www.instagram.com/gillarooney/" class="fa fa-instagram" target="_blank"></a></li>
-        <!-- <li><a href="#" class="fa mute" data-turbolinks="false"><%= image_tag 'bars.gif', width: '20px' %></a></li> -->
+        <li><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="fa fa-bars"></i> </button></li>
       </ul>
     </div>
-    <!--=== End Atribute Navigation ===-->
 
-    <!--=== Start Header Navigation ===-->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu"> <i class="fa fa-bars"></i> </button>
-      <div class="logo"> <a href="/"> <img class="logo logo-display" src="<%= asset_path 'baxterandme.png' %>" alt=""> <img class="logo logo-scrolled" src="<%= asset_path 'baxterandme.png' %>" alt=""> </a> </div>
+      <div class="logo"> <a href="/"> <img class="logo logo-display" src="<%= asset_path 'baxterandme.png' %>" alt=""> <img class="logo logo-scrolled" src="<%= asset_path 'baxterandme2.png' %>" alt=""> </a> </div>
     </div>
-    <!--=== End Header Navigation ===-->
 
-    <!--=== Collect the nav links, forms, and other content for toggling ===-->
     <div class="navbar-collapse collapse" id="navbar-menu" aria-expanded="false">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="/" data-turbolinks="false">Home</a></li>
+      <ul class="nav navbar-nav navbar-right nav-scrollspy-onepage" data-in="fadeInLeft">
+        <li class="scroll" ><a href="/" data-turbolinks="false">Home</a></li>
         <li><a href="/about" data-turbolinks="false">About</a></li>
-        <li><a href="/#watch" data-turbolinks="false">Watch</a></li>
-        <!-- <li><a href="/#contact" data-turbolinks="false">Contact Us</a></li> -->
+        <li class="scroll" ><a id="nav-watch" data-turbolinks="false" href="/">Watch</a></li>
+        <!-- <li class="scroll"><a href="#contact">Contact Us</a></li> -->
       </ul>
     </div>
-    <!--=== /.navbar-collapse ===-->
   </div>
 </nav>
 <!--=== Header End ======-->
@@ -38,7 +31,7 @@
   </div>
   <div class="container">
     <div class="col-md-6 col-sm-7">
-      <h2 class="text-uppercase font-700">One woman’s life, with and without men, but always with dogs.</h2>
+      <h2 class="text-center text-uppercase font-700">One woman’s life, with and without men, but always with dogs.</h2>
       <!-- <h4 class="mt-10 line-height-26 source-font">Part of your success.</h4> -->
       <p class="mt-20">Acclaimed and award winning film maker Gillian Leahy turns her mind to the relationship between herself and her dog in this searching, funny, touching and thought provoking documentary.</p>
       <p>Gill questions her own relationship with her big brown chocolate Labrador, Baxter, and our relationships in general between dogs and humans.</p>
@@ -47,7 +40,7 @@
       <p>Do dogs love us?  Do we love dogs?  Are we in control or are they?  Who is training who?  Why do we love dogs?  Do we treat dogs as they deserve?  Do we treat them as we should? How should we treat them? Are they our slaves or are we theirs?  What do they give us and what do we give them?</p>
       <p>Enhanced by Elizabeth Drake’s music, Steven Macdonald’s insightful cinematography, Denise Haslem’s adroit editing and Gill’s own eccentric, astute, wry and opinionated voice over musings, the film takes us to some familiar haunts and some unexpected destinations on the journey of casting an eye on what goes on between dogs and humans.</p>
       <p>If you’ve ever had a dog, or ever loved a dog, or ever known anyone who loved a dog, or ever wondered why on earth other people love dogs, this could be just the film for you.</p>
-      <p class="mt-30"><a class="btn btn-color btn-circle" href="/">Back to home</a></p>
+      <p class="mt-30"><a class="btn btn-color btn-circle" href="/" data-turbolinks="false">Back to home</a></p>
     </div>
   </div>
 </section>
@@ -57,8 +50,8 @@
 <section class="first-ico-box">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <h4 class="text-uppercase">Film Specs:</h4>
+      <div class="col-md-6 text-center">
+        <h2 class="text-uppercase">Film Specs</h2>
         <p><strong>Production Countries:</strong> Australia</p>
         <p><strong>Year:</strong> 2016</p>
         <p><strong>Language:</strong> English</p>
@@ -71,17 +64,17 @@
         <p><strong>Sound Ratio:</strong> 5.1 Surround</p>
         <p><strong>Originally Shot on:</strong> 4K and various other formats</p>
       </div>
-      <div class="col-md-6">
-        <h4 class="text-uppercase">Production Credits</h4>
-        <p><strong>Producer</strong> 		Sue Brooks – Gecko Films</p>
-        <p><strong>Finance</strong>		Screen Australia</p>
-        <p><strong>Starring</strong> 		Billy Baxter Budd</p>
-        <p><strong>Director</strong>		Gillian Leahy</p>
-        <p><strong>Editor</strong> 			Denise Haslem</p>
-        <p><strong>Cinematographer</strong>	Steven Macdonald</p>
-        <p><strong>Composer</strong>		Elizabeth Drake</p>
-        <p><strong>Line Producer</strong>		Frank Haines</p>
-        <p><strong>Script Editor</strong>		Alison Tilson</p>
+      <div class="col-md-6 text-center">
+        <h2 class="text-uppercase">Production Credits</h2>
+        <p><strong>Producer:</strong> 		Sue Brooks – Gecko Films</p>
+        <p><strong>Finance:</strong>		Screen Australia</p>
+        <p><strong>Starring:</strong> 		Billy Baxter Budd</p>
+        <p><strong>Director:</strong>		Gillian Leahy</p>
+        <p><strong>Editor:</strong> 			Denise Haslem</p>
+        <p><strong>Cinematographer:</strong>	Steven Macdonald</p>
+        <p><strong>Composer:</strong>		Elizabeth Drake</p>
+        <p><strong>Line Producer:</strong>		Frank Haines</p>
+        <p><strong>Script Editor:</strong>		Alison Tilson</p>
       </div>
     </div>
   </div>

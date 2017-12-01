@@ -18,6 +18,7 @@ Bundler.require(*Rails.groups)
 
 module Bookapp
   class Application < Rails::Application
+    config.middleware.insert_before(Rack::Sendfile, Rack::Deflater)
     config.generators do |g|
       g.stylesheets     false
       g.javascripts     false
@@ -25,5 +26,8 @@ module Bookapp
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+  end
+  class Application < Rails::Application
+
   end
 end

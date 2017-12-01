@@ -1,4 +1,5 @@
 <style media="screen">
+
   .hero-text-wrap.new-bg {
     background: url(<%= asset_path 'baxter-hero.jpg' %>) center 0 no-repeat;
     width: 100%;
@@ -16,7 +17,7 @@
     height:100%;
     display: block;
     z-index:0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.3);
   }
 
   #watch-now{
@@ -49,6 +50,12 @@
        border-radius: 1;
     }
   }
+
+  .blue-link {
+    color: #5bc0de;
+
+  }
+
 
 </style>
 <script>
@@ -87,34 +94,22 @@ $(document).ready(function (){
   <div class="hero-text-wrap new-bg overlay">
     <div class="hero-text white-color">
       <div class="container text-center">
-        <div class="row">
-          <h2><a id="watch-now">Watch Now</a></h2>
-        </div>
-        <div class="row">
-          <div class=" col-md-3 col-xs-6 col-md-push-6 hidden-sm hidden-xs">
+        <div class="row pt-50 mt-50" style="margin-left:105px">
+          <div class="col-md-3 col-xs-6 hidden-sm hidden-xs">
+            <!-- hidden-sm hidden-xs -->
             <img class="img-responsive" src="<%= asset_path 'tas.png' %>" alt="">
             <img class="img-responsive" src="<%= asset_path 'syd.png' %>" alt="">
 
           </div>
 
-          <div class="col-md-6 col-xs-12 col-md-pull-3">
-            <div class="arcon-video-box mt-0"> <img class="img-responsive" src="<%= asset_path 'BaxterOverlay.jpg' %>" alt="">
-              <div class="arcon-video-box_overlay">
-                <div class="center-layout">
-                  <div class="v-align-middle"> <a class="popup-vimeo" href="https://vimeo.com/219438401">
-                    <div class="play-button"><i class="mdi mdi-play"></i> </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div class="col-md-3 col-xs-6 hidden-sm hidden-xs">
+            <!--  -->
             <img class="img-responsive" src="<%= asset_path 'perth1.png' %>" alt="">
             <img class="img-responsive" src="<%= asset_path 'coffs.png' %>" alt="">
           </div>
-
+          <div class="col-md-6">
+            <img style="height: 280px;"src="<%= asset_path "BAM.png" %>" alt="bam title">
+          </div>
         </div>
         <div class="row pt-10 visible-xs visible-sm">
           <div class=" col-md-3 col-xs-3">
@@ -130,14 +125,20 @@ $(document).ready(function (){
             <img class="img-responsive" src="<%= asset_path 'coffs.png' %>" alt="">
           </div>
         </div>
-        <div class="row">
+        <!-- <div class="row">
+          <div class="mt-30">
+            <h2><a id="watch-now">Watch Now</a></h2>
+          </div>
+        </div> -->
+        <div class="row mt-50">
           <div class="col-md-12">
-            <div class="mt-50">
+
               <h3>One woman's life, with and without men, but always with dogs.</h3>
 
-            </div>
+
 
           </div>
+
           <div class="mt-0 nav-scrollspy-onepage hidden-xs">
             <h4 class="scroll animated infinite pulse"><a href="#about" data-turbolinks="false" class="white-color" id="down-arrow"><i class="fa fa-angle-down fa-5x"></i></a></h4>
           </div>
@@ -158,18 +159,39 @@ $(document).ready(function (){
 <section class="first-ico-box" id="about">
   <div class="container">
     <div class="row">
-      <div class="col-sm-10 section-heading">
-        <h2 class="text-uppercase">About the film</h2>
-        <div class="mt-30">
-          <p class="lead">
-            Acclaimed and award winning film maker Gillian Leahy turns her mind to the relationship between herself and her dog in this searching, funny, touching and thought provoking documentary.
-          </p>
-          <p class="lead">
-            Gill questions her own relationship with her big brown chocolate Labrador, Baxter, and our relationships in general between dogs and humans. It all begins when Gill wakes up one morning and asks herself, “What am I doing living with this big brown beast?” And it takes off from there.
-          </p>
-          <a href="/about" class="btn btn-info btn-circle">Find out more </a>
+      <div class="col-md-6">
+        <div class="col-sm-10 section-heading">
+          <h2 class="text-uppercase">About the film</h2>
+          <div class="mt-30">
+            <p class="lead">
+              Acclaimed and award winning film maker Gillian Leahy turns her mind to the relationship between herself and her dog in this searching, funny, touching and thought provoking documentary.
+            </p>
+            <p class="lead">
+              Gill questions her own relationship with her big brown chocolate Labrador, Baxter, and our relationships in general between dogs and humans. It all begins when Gill wakes up one morning and asks herself, “What am I doing living with this big brown beast?” And it takes off from there.
+            </p>
+              <a href="/about" class="btn btn-info btn-circle">
+                Find out more
+              </a>
+          </div>
         </div>
+      </div>
+      <div class="col-md-6 col-xs-12" style="margin-top: 80px;">
+          <div class="arcon-video-box"> <img class="img-responsive" src="<%= asset_path 'BaxterOverlay.jpg' %>" alt="">
+            <div class="arcon-video-box_overlay">
+              <div class="center-layout">
+                <div class="v-align-middle"> <a class="popup-vimeo" href="https://vimeo.com/219438401">
+                  <div class="play-button"><i class="mdi mdi-play"></i> </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img style="height: 70px;"src="<%= asset_path "pg.png" %>" alt="">
+        </div>
+      </div>
+    </div>
 
+      <div class="col-sm-10 section-heading">
         <div class="row mt-50" id="watch">
           <h2 class="text-uppercase">Watch the film</h2>
           <div class="col-md-4 pricing-table col-sm-6 wow fadeTop" data-wow-delay="0.1s">
@@ -190,9 +212,10 @@ $(document).ready(function (){
                 <i class="mdi mdi-vimeo fa-3x"></i>
               </h4>
               <h4>
-                Buy or rent on Vimeo
+                Download or rent on Vimeo
               </h4>
-              <div class="pricing-box-bottom"> <a href="https://vimeo.com/ondemand/baxterandme" class="btn btn-info btn-circle btn-animate"><span>Vimeo <i class="mdi mdi-arrow-right"></i></span></a> </div>
+              <div class="pricing-box-bottom">
+                <a href="https://vimeo.com/ondemand/baxterandme" class="btn btn-info btn-circle btn-animate"><span>Vimeo <i class="mdi mdi-arrow-right"></i></span></a> </div>
             </div>
           </div>
           <div class="col-md-4 pricing-table col-sm-6 wow fadeTop" data-wow-delay="0.4s">
@@ -202,29 +225,20 @@ $(document).ready(function (){
               </h4>
               <h4>
                 Buy a DVD
-              </h4>
-              <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-                <input type="hidden" name="cmd" value="_s-xclick">
-                <input type="hidden" name="hosted_button_id" value="8C33W5R9J4ZKJ">
-                <input type="hidden" name="on0" value="Choose your DVD option">
-                <table style="margin-top: 25px;">
-
-
-
-                  <tr>
-                    <td class="select">
-                      <select style="margin-left: 28px;" name="os0">
-                      	<option value="DVD Pal" >DVD Pal $20.00 AUD</option>
-                      	<option value="DVD NTSC">DVD NTSC $20.00 AUD</option>
-                      	<option value="BLURAY">BLURAY $25.00 AUD</option>
-                      </select>
-                      <span class="visible-sm-down hidden-md hidden-lg"><i class="fa fa-caret-down"></i></span>
-                    </td>
-                  </tr>
-                </table>
-                <input type="hidden" name="currency_code" value="AUD">
-                <input style="width: 210px; padding-top:10px;"type="image" src="<%= asset_path "blue-paypal-btn.png" %>" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
+              </h4>              
+              <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="C2D5WT42ZVCXN">
+              <table>
+              <tr><td><input type="hidden" name="on0" value="Baxter and Me DVD"></td></tr><tr><td><select style="margin-left: 57px;" name="os0">
+              	<option value="BluRay">BluRay $34.00 USD</option>
+              	<option value="NTSC">NTSC $34.00 USD</option>
+              	<option value="PAL">PAL $34.00 USD</option>
+              </select> </td></tr>
+              </table>
+              <input type="hidden" name="currency_code" value="USD">
+              <input type="image" style="width: 210px; padding-top:10px;"type="image" src="<%= asset_path "blue-paypal-btn.png" %>" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_AU/i/scr/pixel.gif" width="1" height="1">
               </form>
 
 
@@ -232,6 +246,7 @@ $(document).ready(function (){
             </div>
           </div>
         </div>
+          <h3 class="text-centre">Educational & Institutional sales please go to <br><a href="https://www.roninfilms.com.au/" class="blue-link" target="_blank">www.roninfilms.com.au</a></h3>
       </div>
     </div>
   </div>
@@ -267,10 +282,15 @@ $(document).ready(function (){
           <div class="post">
             <div class="post-img"> <img class="img-responsive" src="<%= asset_path 'ABC.jpg' %>" alt=""/></div>
             <div class="post-info">
-              <h3><a href="https://www.facebook.com/breakfastnews/videos/10154890120688983/" target="_blank"><i class="mdi mdi-video"></i>  ABC News Breakfast</a></h3>
+              <h3>
+                <a href="https://www.facebook.com/breakfastnews/videos/10154890120688983/" target="_blank"><i class="mdi mdi-video"></i>  ABC News Breakfast</a>
+              </h3>
               <h6>June 20, 2017</h6>
-              <p>Filmmaker Gillian Leahy discusses her new "dogumentary" Baxter and Me.</p>
-              <a class="readmore" href="https://www.facebook.com/breakfastnews/videos/10154890120688983/" target="_blank"><span><i class="mdi mdi-video"></i> Watch</span></a> </div>
+              <p>
+                Filmmaker Gillian Leahy discusses her new "dogumentary" Baxter and Me.
+              </p>
+              <a class="readmore" href="https://www.facebook.com/breakfastnews/videos/10154890120688983/" target="_blank"><span><i class="mdi mdi-video"></i> Watch</span></a>
+            </div>
           </div>
           <!--=== Post End ===-->
           <div class="post">

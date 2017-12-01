@@ -1,13 +1,24 @@
 <style media="screen">
-
-  .hero-text-wrap.new-bg {
-    background: url(<%= asset_path 'baxter-hero.jpg' %>) center 0 no-repeat;
-    width: 100%;
-    height: 101vh;
-    position: absolute;
-    z-index: 1;
+  @media(min-width: 700px){
+    .hero-text-wrap.new-bg {
+      background: url(<%= asset_path 'baxter-hero2.jpg' %>) center 0 no-repeat;
+      width: 100%;
+      height: 101vh;
+      position: absolute;
+      z-index: 1;
+      background-size: 100% 100%;
+    }
   }
-
+  @media(max-width: 480px) {
+    .hero-text-wrap.new-bg {
+      background: url(<%= asset_path 'baxter-hero-mobile.jpg' %>) center 0 no-repeat;
+      width: 100%;
+      height: 101vh;
+      position: absolute;
+      z-index: 1;
+      background-size: 100% 100%;
+    }
+  }
   .overlay:before{
     position: absolute;
     content:" ";
@@ -17,7 +28,7 @@
     height:100%;
     display: block;
     z-index:0;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.1);
   }
 
   #watch-now{
@@ -225,7 +236,7 @@ $(document).ready(function (){
               </h4>
               <h4>
                 Buy a DVD
-              </h4>              
+              </h4>
               <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
               <input type="hidden" name="cmd" value="_s-xclick">
               <input type="hidden" name="hosted_button_id" value="C2D5WT42ZVCXN">

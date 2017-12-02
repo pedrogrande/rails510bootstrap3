@@ -1103,6 +1103,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         padding-left: 30px;
         padding-right: 30px;
         margin: 0px -15px;
+        background-color: white;
     }
 
     nav.navbar.bootsnav .navbar-nav > li {

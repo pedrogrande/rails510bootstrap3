@@ -29,7 +29,7 @@ gem 'mailgun-ruby', '~>1.1.4'
 gem 'sucker_punch', '~> 2.0'
 
 # design and interface
-source 'https://rails-assets.org' do
+source 'http://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 gem 'bootstrap-sass', '~> 3.3.6'
